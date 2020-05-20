@@ -1,6 +1,4 @@
 import useSWR from "swr";
-import fetcher from "../../lib/fetcher";
-import { useEffect, useState } from "react";
 const axios = require("axios");
 
 async function fetchStuff() {
