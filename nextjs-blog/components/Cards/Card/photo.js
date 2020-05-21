@@ -1,5 +1,5 @@
 import React from "react";
-import { photos } from "../../lib/FetchAPI";
+import { photos } from "../../../lib/FetchAPI";
 import useSWR from "swr";
 
 function Photo(props) {

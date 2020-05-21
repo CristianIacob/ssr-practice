@@ -1,5 +1,5 @@
 import React from "react";
-import { weatherInfo } from "../../lib/FetchAPI";
+import { weatherInfo } from "../../../lib/FetchAPI";
 import useSWR from "swr";
 
 const CURRENT_TEMPERATURE = "current_temp";

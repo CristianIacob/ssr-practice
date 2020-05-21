@@ -1,20 +1,10 @@
 import Layout from "../components/Layout";
-import { getSortedPostsData } from "../lib/posts";
-import FetchData from "../components/fetchData/fetchData";
-
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
+import Cards from "../components/Cards";
 
 export default function Home() {
   return (
     <Layout>
-      <FetchData name={"Singapore"} />
+      <Cards />
     </Layout>
   );
 }
