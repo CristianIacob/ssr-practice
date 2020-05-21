@@ -3,6 +3,7 @@ const axios = require("axios");
 
 async function fetchStuff() {
   // Fetch data from external API
+  console.log("api_key: ", process.env.PHOTOS_API_KEY);
   const res = await axios({
     method: "GET",
     url: "https://api.unsplash.com/search/photos?",
@@ -10,7 +11,7 @@ async function fetchStuff() {
       "content-type": "application/json",
     },
     params: {
-      client_id: "8e2ef245a5391ecf438dac62cbe571b1bea4b805b66179b6aee27a2b01a7fd8f",
+      client_id: process.env.PHOTOS_API_KEY,
       query: "London",
     },
   });

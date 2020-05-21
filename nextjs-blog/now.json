@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "PHOTOS_API_KEY": "@PHOTOS_API_KEY"
+    }
+  }
+}
