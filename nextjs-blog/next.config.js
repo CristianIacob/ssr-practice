@@ -5,6 +5,6 @@ console.log({
 
 module.exports = {
   env: {
-    PHOTOS_API_KEY: process.env.PHOTOS_API_KEY,
+    // PHOTOS_API_KEY: process.env.PHOTOS_API_KEY,
   },
 };
