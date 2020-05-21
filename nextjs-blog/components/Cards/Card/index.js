@@ -10,7 +10,7 @@ const cardStyle = {
 
 function Card(props) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-6 my-6" style={cardStyle}>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-3 my-3" style={cardStyle}>
       <Photo name={props.title} />
       <div className="px-4 py-4">
         <div className="font-bold text-xl mb-2">{props.title}</div>

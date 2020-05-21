@@ -1,14 +1,14 @@
 import Card from "./Card";
 
-const cities = ["Singapore", "San Francisco", "London", "Madrid", "Berlin", "Barcelona"];
+const cities = ["Singapore", "San Francisco", "Timisoara", "Oradea", "Berlin", "Barcelona", "Oslo", "London"];
 
 function Cards() {
   return (
-    <main className="flex justify-center flex-wrap">
+    <>
       {cities.map((city) => {
         return <Card title={city} />;
       })}
-    </main>
+    </>
   );
 }
 

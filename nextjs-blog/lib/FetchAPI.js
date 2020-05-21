@@ -41,6 +41,7 @@ export async function weatherInfo(query) {
 }
 
 export async function photos(query) {
+  const count = 10;
   let res = await axios({
     method: "GET",
     url: "https://api.unsplash.com/search/photos?",
@@ -50,11 +51,11 @@ export async function photos(query) {
     params: {
       client_id: process.env.PHOTOS_API_KEY,
       query: query,
-      per_page: 20,
+      per_page: count,
     },
   });
 
-  let random = parseInt(Math.random() * 19);
+  let random = parseInt(Math.random() * count - 1);
   res = res?.data?.results[random].urls.small;
 
   return res;
