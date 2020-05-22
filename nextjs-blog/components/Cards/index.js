@@ -3,7 +3,6 @@ import Card from "./Card";
 const cities = ["Singapore", "San Francisco", "Timisoara", "Oradea", "Berlin", "Barcelona", "Oslo", "London"];
 
 function Cards(props) {
-  console.log("Cards -> props", props);
   return (
     <>
       {props.searchValue ? (
