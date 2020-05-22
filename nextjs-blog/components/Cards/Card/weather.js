@@ -15,13 +15,17 @@ function Weather(props) {
   if (!weatherData) return <div>Loading weather...</div>;
 
   const { main, clouds, wind, weather } = weatherData;
+  console.log("Weather -> weatherData", weatherData);
 
   return (
-    <section className="text-right">
-      <p className="font-sans text-gray-700 text-2xl text-left">{`${formatTemperature(main.temp)}`}</p>
-      <p className="text-gray-700 text-base">{`${formatTemperature(main.temp_max)}`}</p>
-      <p className="text-gray-700 text-base">{`${formatTemperature(main.temp_min)}`} </p>
-    </section>
+    <>
+      <div className="font-bold text-xl mb-2">{weatherData.name}</div>
+      <section className="text-right">
+        <p className="font-sans text-gray-700 text-2xl text-left">{`${formatTemperature(main.temp)}`}</p>
+        <p className="text-gray-700 text-base">{`${formatTemperature(main.temp_max)}`}</p>
+        <p className="text-gray-700 text-base">{`${formatTemperature(main.temp_min)}`} </p>
+      </section>
+    </>
   );
 }
 

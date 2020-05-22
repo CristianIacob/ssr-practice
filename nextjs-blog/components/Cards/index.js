@@ -2,12 +2,17 @@ import Card from "./Card";
 
 const cities = ["Singapore", "San Francisco", "Timisoara", "Oradea", "Berlin", "Barcelona", "Oslo", "London"];
 
-function Cards() {
+function Cards(props) {
+  console.log("Cards -> props", props);
   return (
     <>
-      {cities.map((city) => {
-        return <Card title={city} />;
-      })}
+      {props.searchValue ? (
+        <Card key={`weather-card-solo`} title={props.searchValue} />
+      ) : (
+        cities.map((city, i) => {
+          return <Card key={`weather-card-${i}`} title={city} />;
+        })
+      )}
     </>
   );
 }

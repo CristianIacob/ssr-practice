@@ -1,8 +1,10 @@
 const axios = require("axios");
 
+/**
+ * LEGACY
+ * used for multi search - maybe remove? */
 export async function multiWeather(IDs) {
   const listIDs = IDs.join(",");
-
   try {
     const result = await axios({
       method: "GET",
@@ -24,7 +26,6 @@ export async function multiWeather(IDs) {
 }
 
 export async function weatherInfo(query) {
-  console.log("weather -> query", query);
   const res = await axios({
     method: "GET",
     url: `https://api.openweathermap.org/data/2.5/weather?q=${query}`,
