@@ -1,6 +1,6 @@
 import React from "react";
 import Photo from "./photo";
-import Weather from "./weather";
+import Weather from "./Weather";
 
 const cardStyle = {
   borderRadius: "8px",
