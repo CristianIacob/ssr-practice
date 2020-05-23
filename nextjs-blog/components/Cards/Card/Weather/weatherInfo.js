@@ -6,8 +6,8 @@ const formatTemperature = (temperature) => {
 
 const CurrentTemp = (props) => {
   return (
-    <span className="flex items-center">
-      <img className="h-full" src={`https://openweathermap.org/img/wn/${props.icon}.png`} />
+    <span className="flex w-24 items-center justify-end">
+      <img className="w-1/3" src={`./weatherIcons/${props.icon}.png`} />
       <p className=" text-gray-700 text-4xl text-left">{`${formatTemperature(props.temp)}`}</p>
     </span>
   );
