@@ -13,7 +13,7 @@ function SearchBar(props) {
         onBlur={props.onBlur}
       />
       <span onClick={props.onIconClick} className="absolute pin-r pin-t mt-3 mr-4 cursor-pointer text-purple-lighter top-0 right-0">
-        <svg version="1.1" className="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 52.966 52.966">
+        <svg version="1.1" className="h-4 text-dark" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 52.966 52.966">
           <path
             d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
       c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
