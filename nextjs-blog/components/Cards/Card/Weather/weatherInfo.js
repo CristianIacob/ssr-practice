@@ -23,7 +23,7 @@ const MinMaxTemp = (props) => (
 function WeatherInfo(props) {
   const { main, name, icon } = props;
   return (
-    <section className="flex flex-row items-center mb-5">
+    <section className="flex flex-row items-center mb-3">
       <h1 className="font-bold text-xl text-gray-700 mb-2">{name}</h1>
       <h1 className="font-sans ml-auto flex items-center">
         <CurrentTemp temp={main.feels_like} icon={icon} />

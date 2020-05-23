@@ -11,9 +11,7 @@ function formatTime(timeStamp, locale = "en") {
   minutes = minutes / 60;
   minutes = Math.abs(Math.abs(hours) - Math.abs(minutes));
 
-  const time = `${hours <= 0 ? "in" : ""} ${hours !== 0 ? Math.abs(hours) + "h" : ""}${Math.round(minutes * 60)}m ${
-    hours > 0 ? "ago" : ""
-  }`;
+  const time = `${hours <= 0 ? "in" : ""} ${hours !== 0 ? Math.abs(hours) + ":" : ""}${Math.round(minutes * 60)} ${hours > 0 ? "ago" : ""}`;
   return time;
 }
 

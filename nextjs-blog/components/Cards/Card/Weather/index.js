@@ -20,7 +20,7 @@ function Weather(props) {
     <div className="flex flex-col px-4 py-4">
       <WeatherInfo name={weatherData.name} main={main} icon={weather[0].icon} />
       <WeatherDescription weather={weather[0]} />
-      <Sun sunrise={sunrise} sunset={sunset} locale={country} />
+      {/* <Sun sunrise={sunrise} sunset={sunset} locale={country} /> */}
     </div>
   );
 }
