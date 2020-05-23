@@ -3,9 +3,13 @@ import { weatherInfo } from "../../../../lib/FetchAPI";
 import useSWR from "swr";
 import WeatherDescription from "./weatherDescription";
 import WeatherInfo from "./weatherInfo";
+import FailedAPI from "../../../FailedAPI";
 
 function Weather(props) {
-  const { data: weatherData } = useSWR(`/api/weather${props.name}`, () => weatherInfo(props.name));
+  const { data: weatherData, error } = useSWR(`/api/weather${props.name}`, () => weatherInfo(props.name));
+
+  /* error handling */
+  if (error) return <FailedAPI name={"weather"} />;
 
   /* loading */
   if (!weatherData) return <div>Loading weather...</div>;

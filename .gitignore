@@ -1,2 +1,9 @@
+
+#next build
+/.next
+
+# env files
 .env*
+
+#node modules
 /node_modules/*
