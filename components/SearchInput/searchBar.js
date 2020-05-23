@@ -6,7 +6,7 @@ function SearchBar(props) {
       <input
         className="bg-white focus:outline-none focus:shadow-md border border-gray-300 rounded-lg py-2 px-10 block w-full appearance-none leading-normal"
         type="search"
-        placeholder="Madrid, Oslo, Singapore..."
+        placeholder="Madrid, Taiwan, Singapore..."
         value={props.value}
         onChange={props.onChange}
         onFocus={props.onFocus}
