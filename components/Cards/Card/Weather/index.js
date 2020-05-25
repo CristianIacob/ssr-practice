@@ -7,7 +7,6 @@ import FailedAPI from "../../../FailedAPI";
 
 function Weather(props) {
   const { data: weatherData, error } = useSWR(`/api/weather${props.name}`, () => weatherInfo(props.name));
-
   /* error handling */
   if (error) return <FailedAPI name={"weather"} />;
 
@@ -18,7 +17,7 @@ function Weather(props) {
   const { sunrise, sunset, country } = sys;
 
   return (
-    <div className="flex flex-col px-4 py-4">
+    <div className='flex flex-col px-4 py-4'>
       <WeatherInfo name={weatherData.name} main={main} icon={weather[0].icon} />
       <WeatherDescription weather={weather[0]} />
     </div>
