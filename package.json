@@ -13,12 +13,17 @@
     "axios": "^0.19.2",
     "gray-matter": "^4.0.2",
     "moment": "^2.26.0",
-    "next": "9.3.5",
+    "next": "^9.4",
     "next-build-id": "^3.0.0",
     "postcss-import": "^12.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "swr": "^0.2.1",
     "tailwindcss": "^1.4.6"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 11"
+  ]
 }
