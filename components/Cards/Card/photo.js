@@ -5,6 +5,7 @@ import FailedAPI from "../../FailedAPI";
 
 function Photo(props) {
   const { data: photo, error } = useSWR(`/api/unsplash${props.name}`, () => photos(props.name));
+
   /* error handling */
   if (error) return <FailedAPI name={"image"} />;
 
