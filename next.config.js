@@ -1,6 +1,7 @@
 const nextBuildId = require("next-build-id");
 
 const withTM = require("next-transpile-modules")(["swr"]); // pass the modules you would like to see transpiled
+const withCss = require("@zeit/next-css");
 
 module.exports = withTM({
   generateBuildId: () => nextBuildId({ dir: __dirname }),
@@ -9,3 +10,5 @@ module.exports = withTM({
     WEATHER_API_KEY: process.env.WEATHER_API_KEY,
   },
 });
+
+module.exports = withCss();
