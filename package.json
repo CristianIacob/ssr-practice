@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^9.8.0",
     "axios": "^0.19.2",
     "gray-matter": "^4.0.2",
