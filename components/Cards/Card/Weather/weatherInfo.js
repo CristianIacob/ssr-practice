@@ -14,7 +14,7 @@ const CurrentTemp = (props) => {
 };
 
 const MinMaxTemp = (props) => (
-  <span className="text-xs text-gray-600 ml-2">
+  <span className="text-xs text-gray-500 ml-2">
     <p>{`${formatTemperature(props.max)}`}</p>
     <p>{`${formatTemperature(props.min)}`} </p>
   </span>
@@ -24,7 +24,7 @@ function WeatherInfo(props) {
   const { main, name, icon } = props;
   return (
     <section className="flex flex-row items-center mb-3">
-      <h1 className="font-bold text-xl text-gray-700 mb-2">{name}</h1>
+      <h1 className="font-bold text-xl text-gray-600 mb-2">{name}</h1>
       <h1 className="font-sans ml-auto flex items-center">
         <CurrentTemp temp={main.feels_like} icon={icon} />
         <MinMaxTemp min={main.temp_max} max={main.temp_min} />

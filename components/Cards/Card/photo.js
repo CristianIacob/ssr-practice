@@ -22,7 +22,7 @@ function Photo(props) {
       </div>
     );
 
-  return <img className="h-56 w-full object-cover" src={photo} alt="" />;
+  return <img className="h-56 w-full object-cover" src={photo} alt="" loading="lazy" />;
 }
 
 export default Photo;

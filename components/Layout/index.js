@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className="h-full">
       <div className="mx-auto overflow-hidden">
-        <main className="flex justify-center flex-wrap">{children}</main>
+        <main className="flex justify-center flex-wrap font-serif py-12">{children}</main>
       </div>
     </div>
   );

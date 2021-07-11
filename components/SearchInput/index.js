@@ -15,7 +15,7 @@ function SearchInput(props) {
   };
 
   return (
-    <form className="flex justify-center w-full my-16" onSubmit={handleSearchSubmit}>
+    <form className="flex justify-center w-full pb-16" onSubmit={handleSearchSubmit}>
       <SearchBar value={searchValue} onChange={handleSearchChange} onIconClick={handleSearchSubmit} />
     </form>
   );

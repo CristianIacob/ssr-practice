@@ -22,7 +22,7 @@ function Weather(props) {
    */
   if (!weatherData)
     return (
-      <div style={{ height: 143 }} className="flex flex-col px-4 py-4 items-center justify-center">
+      <div style={{ height: 121 }} className="flex flex-col px-4 py-4 items-center justify-center">
         <Loader />
       </div>
     );
