@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "./Card";
 
 const cities = ["Singapore", "San Francisco", "Timisoara", "Oradea", "Berlin", "Barcelona", "Oslo", "London"];
