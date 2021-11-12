@@ -41,8 +41,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["moment", "npm:2.29.1"],
             ["next", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:11.1.2"],
             ["next-build-id", "npm:3.0.0"],
-            ["next-transpile-modules", "npm:6.4.1"],
-            ["postcss-import", "npm:12.0.1"],
+            ["next-transpile-modules", "npm:9.0.0"],
+            ["postcss", "npm:8.3.11"],
+            ["postcss-import", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:14.0.2"],
+            ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:17.0.2"],
             ["swr", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:0.5.7"],
@@ -3155,10 +3157,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["next-transpile-modules", [
-        ["npm:6.4.1", {
-          "packageLocation": "./.yarn/cache/next-transpile-modules-npm-6.4.1-e7becaec3b-92eb59dc91.zip/node_modules/next-transpile-modules/",
+        ["npm:9.0.0", {
+          "packageLocation": "./.yarn/cache/next-transpile-modules-npm-9.0.0-f224c724ec-9a5d86d80c.zip/node_modules/next-transpile-modules/",
           "packageDependencies": [
-            ["next-transpile-modules", "npm:6.4.1"],
+            ["next-transpile-modules", "npm:9.0.0"],
             ["enhanced-resolve", "npm:5.8.3"],
             ["escalade", "npm:3.1.1"]
           ],
@@ -3653,14 +3655,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["postcss-import", [
-        ["npm:12.0.1", {
-          "packageLocation": "./.yarn/cache/postcss-import-npm-12.0.1-1108779ed3-f891e16ace.zip/node_modules/postcss-import/",
+        ["npm:14.0.2", {
+          "packageLocation": "./.yarn/cache/postcss-import-npm-14.0.2-d5d5fc15ed-e9f42b5956.zip/node_modules/postcss-import/",
           "packageDependencies": [
-            ["postcss-import", "npm:12.0.1"],
-            ["postcss", "npm:7.0.39"],
-            ["postcss-value-parser", "npm:3.3.1"],
+            ["postcss-import", "npm:14.0.2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:14.0.2", {
+          "packageLocation": "./.yarn/__virtual__/postcss-import-virtual-684005421a/0/cache/postcss-import-npm-14.0.2-d5d5fc15ed-e9f42b5956.zip/node_modules/postcss-import/",
+          "packageDependencies": [
+            ["postcss-import", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:14.0.2"],
+            ["@types/postcss", null],
+            ["postcss", "npm:8.3.11"],
+            ["postcss-value-parser", "npm:4.1.0"],
             ["read-cache", "npm:1.0.0"],
             ["resolve", "patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"]
+          ],
+          "packagePeers": [
+            "@types/postcss",
+            "postcss"
           ],
           "linkType": "HARD",
         }]
@@ -3714,7 +3728,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-nested", "virtual:98a54347ad48b100359dc1c925ada51bc6467d6b2d7f5bcdfc676041a76119c6b52ea344351edde799914143ccaea628f9cd03caa9ca7d44b590007997b8764e#npm:5.0.6"],
             ["@types/postcss", null],
-            ["postcss", null],
+            ["postcss", "npm:8.3.11"],
             ["postcss-selector-parser", "npm:6.0.6"]
           ],
           "packagePeers": [
@@ -3807,6 +3821,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["promise-retry", "npm:2.0.1"],
             ["err-code", "npm:2.0.3"],
             ["retry", "npm:0.12.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["prop-types", [
+        ["npm:15.7.2", {
+          "packageLocation": "./.yarn/cache/prop-types-npm-15.7.2-d7a04f2274-5eef82fdda.zip/node_modules/prop-types/",
+          "packageDependencies": [
+            ["prop-types", "npm:15.7.2"],
+            ["loose-envify", "npm:1.4.0"],
+            ["object-assign", "npm:4.1.1"],
+            ["react-is", "npm:16.13.1"]
           ],
           "linkType": "HARD",
         }]
@@ -3986,6 +4012,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["react-is", [
+        ["npm:16.13.1", {
+          "packageLocation": "./.yarn/cache/react-is-npm-16.13.1-a9b9382b4f-f7a19ac349.zip/node_modules/react-is/",
+          "packageDependencies": [
+            ["react-is", "npm:16.13.1"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:17.0.2", {
           "packageLocation": "./.yarn/cache/react-is-npm-17.0.2-091bbb8db6-9d6d111d89.zip/node_modules/react-is/",
           "packageDependencies": [
@@ -4727,7 +4760,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-emoji", "npm:1.11.0"],
             ["normalize-path", "npm:3.0.0"],
             ["object-hash", "npm:2.2.0"],
-            ["postcss", null],
+            ["postcss", "npm:8.3.11"],
             ["postcss-js", "npm:3.0.3"],
             ["postcss-load-config", "virtual:98a54347ad48b100359dc1c925ada51bc6467d6b2d7f5bcdfc676041a76119c6b52ea344351edde799914143ccaea628f9cd03caa9ca7d44b590007997b8764e#npm:3.1.0"],
             ["postcss-nested", "virtual:98a54347ad48b100359dc1c925ada51bc6467d6b2d7f5bcdfc676041a76119c6b52ea344351edde799914143ccaea628f9cd03caa9ca7d44b590007997b8764e#npm:5.0.6"],
@@ -5043,8 +5076,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["moment", "npm:2.29.1"],
             ["next", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:11.1.2"],
             ["next-build-id", "npm:3.0.0"],
-            ["next-transpile-modules", "npm:6.4.1"],
-            ["postcss-import", "npm:12.0.1"],
+            ["next-transpile-modules", "npm:9.0.0"],
+            ["postcss", "npm:8.3.11"],
+            ["postcss-import", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:14.0.2"],
+            ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:17.0.2"],
             ["swr", "virtual:acfb7fe72ab8d97422813548704a4baa57d6c0d4e02fe2cd34784f059a3d98baad6905b7f03a11a3ed5f64e141d417f5094ca0289dbd7cc380c6766663d3a62b#npm:0.5.7"],

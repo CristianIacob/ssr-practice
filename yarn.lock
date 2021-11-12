@@ -2331,7 +2331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0":
+"loose-envify@npm:^1.1.0, loose-envify@npm:^1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -2607,13 +2607,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-transpile-modules@npm:^6.4.0":
-  version: 6.4.1
-  resolution: "next-transpile-modules@npm:6.4.1"
+"next-transpile-modules@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "next-transpile-modules@npm:9.0.0"
   dependencies:
     enhanced-resolve: ^5.7.0
     escalade: ^3.1.1
-  checksum: 92eb59dc914b4a94fc967072baba304fa4ead61cba8b74e337ecfc6c873dc131d2d9c0bdc3fdfcc60abc6ff742fabab9974f8807875fbed0f34a46226791872d
+  checksum: 9a5d86d80cedc2404b2b1d5bd4994f2f7bf60e5e20f24e8cc5cfec34da1418b4a439916f37a95ca336bcf6d81094c3647354ac6a0c6737b3df59e62b6380507d
   languageName: node
   linkType: hard
 
@@ -3102,15 +3102,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:^12.0.1":
-  version: 12.0.1
-  resolution: "postcss-import@npm:12.0.1"
+"postcss-import@npm:^14.0.2":
+  version: 14.0.2
+  resolution: "postcss-import@npm:14.0.2"
   dependencies:
-    postcss: ^7.0.1
-    postcss-value-parser: ^3.2.3
+    postcss-value-parser: ^4.0.0
     read-cache: ^1.0.0
     resolve: ^1.1.7
-  checksum: f891e16ace33337627d64a2b37a1c285f06aef6aa9d780768db96b7c509a649e8fa7f686768f9b96d42ff364f8a4c0d06c9e850d83bd00cbe625abdbf9fa046f
+  peerDependencies:
+    postcss: ^8.0.0
+  checksum: e9f42b5956b1231f8516da11268021222d61969befc142bb7d0a65d9d3e53bdc574e51486b6ffdf72c0b395ce19060663eab5b5504b3d0855c173357425f9fb5
   languageName: node
   linkType: hard
 
@@ -3161,14 +3162,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^3.2.3, postcss-value-parser@npm:^3.3.0":
+"postcss-value-parser@npm:^3.3.0":
   version: 3.3.1
   resolution: "postcss-value-parser@npm:3.3.1"
   checksum: 62cd26e1cdbcf2dcc6bcedf3d9b409c9027bc57a367ae20d31dd99da4e206f730689471fd70a2abe866332af83f54dc1fa444c589e2381bf7f8054c46209ce16
   languageName: node
   linkType: hard
 
-"postcss-value-parser@npm:^4.1.0":
+"postcss-value-parser@npm:^4.0.0, postcss-value-parser@npm:^4.1.0":
   version: 4.1.0
   resolution: "postcss-value-parser@npm:4.1.0"
   checksum: 68a9ea27c780fa3cc350be37b47cc46385c61dd9627990909230e0e9c3debf6d5beb49006bd743a2e506cdd6fa7d07637f2d9504a394f67cc3011d1ff0134886
@@ -3186,7 +3187,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7.0.1, postcss@npm:^7.0.32":
+"postcss@npm:^7.0.32":
   version: 7.0.39
   resolution: "postcss@npm:7.0.39"
   dependencies:
@@ -3196,7 +3197,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.2.1":
+"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.3.11":
   version: 8.3.11
   resolution: "postcss@npm:8.3.11"
   dependencies:
@@ -3242,6 +3243,17 @@ __metadata:
     err-code: ^2.0.2
     retry: ^0.12.0
   checksum: f96a3f6d90b92b568a26f71e966cbbc0f63ab85ea6ff6c81284dc869b41510e6cdef99b6b65f9030f0db422bf7c96652a3fff9f2e8fb4a0f069d8f4430359429
+  languageName: node
+  linkType: hard
+
+"prop-types@npm:^15.7.2":
+  version: 15.7.2
+  resolution: "prop-types@npm:15.7.2"
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.8.1
+  checksum: 5eef82fdda64252c7e75aa5c8cc28a24bbdece0f540adb60ce67c205cf978a5bd56b83e4f269f91c6e4dcfd80b36f2a2dec24d362e278913db2086ca9c6f9430
   languageName: node
   linkType: hard
 
@@ -3386,6 +3398,13 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.8.1":
+  version: 16.13.1
+  resolution: "react-is@npm:16.13.1"
+  checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
   languageName: node
   linkType: hard
 
@@ -4302,8 +4321,10 @@ __metadata:
     moment: ^2.26.0
     next: ^11.0.1
     next-build-id: ^3.0.0
-    next-transpile-modules: ^6.4.0
-    postcss-import: ^12.0.1
+    next-transpile-modules: ^9.0.0
+    postcss: ^8.3.11
+    postcss-import: ^14.0.2
+    prop-types: ^15.7.2
     react: ^17.0.2
     react-dom: ^17.0.2
     swr: ^0.5.6

@@ -1,6 +1,8 @@
 import React from "react";
-import { photos } from "../../../lib/FetchAPI";
 import useSWR from "swr";
+import Image from "next/image";
+
+import { photos } from "../../../lib/FetchAPI";
 import FailedAPI from "../../FailedAPI";
 import Loader from "../../Loader";
 
@@ -22,7 +24,7 @@ function Photo(props) {
       </div>
     );
 
-  return <img className="h-56 w-full object-cover" src={photo} alt="" loading="lazy" />;
+  return <Image width={500} height={300} className="h-56 w-full object-cover" src={photo} alt="" loading="lazy" />;
 }
 
 export default Photo;
