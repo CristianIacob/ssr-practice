@@ -1,17 +1,22 @@
 import React from "react";
-import moment from "moment";
+import dayjs from "dayjs";
 
 function formatTime(timeStamp, locale = "en") {
-  moment.locale(locale);
-  const today = moment(moment(), "DD/MM/YYYY HH:mm:ss");
-  const newTime = moment(moment.unix(timeStamp), "DD/MM/YYYY HH:mm:ss");
+  dayjs.locale(locale);
+
+  const today = dayjs(dayjs(), "DD/MM/YYYY HH:mm:ss");
+  const newTime = dayjs(dayjs(timeStamp), "DD/MM/YYYY HH:mm:ss");
 
   const hours = today.diff(newTime, "hours");
+
   let minutes = today.diff(newTime, "minutes");
   minutes = minutes / 60;
   minutes = Math.abs(Math.abs(hours) - Math.abs(minutes));
 
-  const time = `${hours <= 0 ? "in" : ""} ${hours !== 0 ? Math.abs(hours) + ":" : ""}${Math.round(minutes * 60)} ${hours > 0 ? "ago" : ""}`;
+  const time = `${hours <= 0 ? "in" : ""} ${
+    hours !== 0 ? Math.abs(hours) + ":" : ""
+  }${Math.round(minutes * 60)} ${hours > 0 ? "ago" : ""}`;
+
   return time;
 }
 
