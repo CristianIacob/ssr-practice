@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import SearchBar from "./searchBar";
-import data from "../../city.list.json";
+import data from "../../public/city.list.min.json";
 
 function SearchInput(props) {
   const cityNames = useMemo(
