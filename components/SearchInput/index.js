@@ -58,14 +58,16 @@ function SearchInput(props) {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     e.stopPropagation();
+
     props.handleSearchSubmit(searchValue);
     setIsSuggestionsVisible(false);
   };
 
   const handleSuggestionClick = (suggestion) => {
     setSearchValue(suggestion);
-    props.handleSearchSubmit(suggestion);
     setIsSuggestionsVisible(false);
+
+    props.handleSearchSubmit(suggestion);
   };
 
   return (

@@ -18,7 +18,6 @@ function SearchBar(props) {
         value={props.value}
         onChange={props.onChange}
         onFocus={() => {
-          console.log("hi");
           props.setIsSuggestionsVisible(true);
         }}
         onBlur={props.onBlur}
